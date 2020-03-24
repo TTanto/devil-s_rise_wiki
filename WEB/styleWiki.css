@@ -22,6 +22,10 @@
     font-family: "text";
     src: url(fonts/gothica\ class\ 2.ttf);
 }
+@font-face{
+	font-family: "main";
+    src: url(fonts/EnterCommand.ttf);
+}
 
 html {
 	font-family: sans-serif;
@@ -130,19 +134,26 @@ span.user {
 }
 
 .mainsection {
+	border: 2px solid #000;
+	height:auto;
+	padding:fit-content;
 	margin: 0em 6em 0em 17em;
 }
 
 /**
 Estilo de los Módulos
 */
+.wrapModules{
+	padding:fit-content;
+	
+}
 .Modules{
 	border: 2px solid #ff0;
 }
 .module_lore{
 	margin-left : 70px;
 	display:inline-block;
-	padding : 20px 20px;
+	padding : 10px 20px;
 	width: max-content;
 	border: 4px solid #000;
 }
@@ -150,20 +161,20 @@ Estilo de los Módulos
 .module_items{
 	margin-left: 30px;
 	display:inline-block;
-	padding : 20px 40px;
+	padding : 10px 20px;
 	width: max-content;
 	border: 4px solid #000;
 }
 .module_characters{
 	margin-left: 30px;
 	display:inline-block;
-	padding : 20px 40px;
+	padding : 10px 20px;
 	width: max-content;
 	border: 4px solid #000;
 }
 .module_forum{
 	margin-left: 30px;
-	padding : 20px 40px;
+	padding : 10px 20px;
 	margin: 40px;
 	display:inline-block;
 	width: max-content;
@@ -212,6 +223,15 @@ Estilo de los Módulos
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
 }
+.contentHome h2{
+	font-family: "gtitle";
+	font-size: 220%;
+	letter-spacing: 3px;
+}
+.contentHome p{
+	font-family:"main";
+	font-size: 150%;
+}
 .contentItems{
 	padding: 1.25em 1.5em 1.5em 1.5em;
 	border-left: 1px solid #a7d7f9;
@@ -220,6 +240,16 @@ Estilo de los Módulos
 	font-size: 0.875em;
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
+}
+.all_items_table{
+	width:100%;
+}
+.all_items_table img{
+	display:block;
+	margin:auto;
+}
+.holly_water_icon{
+	width:70%;
 }
 .contentHistory {
 	padding: 1.25em 1.5em 1.5em 1.5em;
@@ -238,6 +268,11 @@ Estilo de los Módulos
 	font-size: 0.875em;
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
+}
+.contentCharacters h1{
+	font-family:"retro";
+	letter-spacing: 5px;
+	
 }
 
 .p_lore{
@@ -311,11 +346,12 @@ Estilo de los Módulos
 }
 .my_project{
 	border: 5px solid #f1b;
-	padding: 5px 10px;
+	padding: 5px px;
 	font-size: 95%;
 	line-height: 1.7em;
 	width: 100%;
-	margin-right: 20px;
+	margin-right: 100px;
+
 }
 .team_info{
 	display: inline-block;
@@ -331,15 +367,17 @@ Estilo de los Módulos
 }
 .motivation{
 	display: inline-block;
+	text-align:justify;
 	margin-top: 50px;
 	border: 5px solid #f7f6;
 	background-color: #f8f9fa;
 	padding: 5px 10px;
-	font-size: 95%;
+	font-size: 88%;
 	position: relative;
 	line-height: 1.7em;
 	width: 20%;
-	margin-right: 20px;
+	margin-right: 15px;
+	margin-left:40px;
 }
 .versions{
 	display: inline-block;
@@ -350,9 +388,13 @@ Estilo de los Módulos
 	font-size: 95%;
 	position: relative;
 	line-height: 1.7em;
-	width: 20%;
-	margin-right: 20px;
+	width: fit-content;
+	margin-left:8%;
+	
 }
+
+
+
 
 .index_lore{
 	font-family: "Retro";
@@ -458,10 +500,7 @@ Estilo de los Módulos
 	line-height: 1.7em;
 	width: 250px;
 }
-.player_items{
-	padding :4% 6%;
-	border :5px solid #000;
-}
+
 #Weapons{
 	font-size: small;
 	display:inline-block;
@@ -608,11 +647,14 @@ optgroup {
 	font-weight: bold;
 }
 table {
+	border: 2px solid #000;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 td,th {
-	padding: 0;
+	border: 2px solid #000;
+
+	padding: 4px;
 }
 html {
 	color: #222;
