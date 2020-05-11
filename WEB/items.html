@@ -73,7 +73,62 @@
 				</div>
 				<div class="contentItems">
 					<h1> All Items in one Table</h1>
+					<p>Nos referimos a Item, todo objeto que el JUGADOR puede utilizar durante el gameplay. Existen diferentes tipos de objetos; armas, consumibles, bendiciones.</p>
+					
+					<script type="text/javascript" id="script_desplegable">
+						function ver(n) {
+								if(n == 1){
+									document.getElementById("subsection_weapons").style.display="block"
+								}
+								if(n == 2){
+									document.getElementById("subsection_consumables").style.display="block"
 
+								}
+								if(n == 3){
+									document.getElementById("subsection_blessings").style.display="block"
+								}
+								 
+							}
+						function ocultar(n) {
+								if(n == 1){
+								 document.getElementById("subsection_weapons").style.display="none"
+								 }
+								 if(n == 2){
+								document.getElementById("subsection_consumables").style.display="none"
+								}
+								if(n == 3){
+								document.getElementById("subsection_blessings").style.display="none"
+								}
+								}
+						
+						
+						</script>
+		
+					<table  id ="items_navigation">
+						<thead>
+							<th id="weapons_navigation"onmouseover="ver(1)" onmouseout="ocultar(1)"> <a href ="#">WEAPONS</a> 
+								<div id="subsection_weapons" >
+								<p id= "weapons_angels"> <a href="#"> Angel Weaponry</a></p>
+								<p id = "weapons_demons"><a href="#"> Demon Weaponry</a></p>
+								</div> 
+							</th>
+							<th id="consumables_navigation" onmouseover="ver(2)" onmouseout="ocultar(2)"> <a href="#">CONSUMIBLES</a>
+							<div id="subsection_consumables" >
+								<p id= "potions"> <a href="#"> Potions</a></p>
+								<p id = "holly_water"><a href="#"> Holy Water</a></p>
+							</div>
+						</th>
+							<th id = "blessings_navigation"  onmouseover="ver(3)" onmouseout="ocultar(3)"> <a href="#"> BLESSINGS</a> 
+							<div id="subsection_blessings">
+								<p id="angel_blessing"><a href="#"> Angel Blessings </a></p>
+								<p id="human_blessing"><a href="#"> Human Blessing</a> </p>
+							</div>
+						</th>
+						</thead>
+					</table>
+					<br>
+					<br>
+					<br>
 					<table class="all_items_table">
 						<tr>
 							
@@ -85,7 +140,7 @@
 							<th>MORE INFO</th>
 						</tr>
 						<tr>
-						<td>ANGEL'S WEAPONRY</td>
+						<td id="weapons">ANGEL'S WEAPONRY</td>
 						</tr>
 					
 						<tr>

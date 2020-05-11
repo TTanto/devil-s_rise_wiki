@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
-         <link rel="stylesheet" href="styleWiki.css"> 
+         <link rel="stylesheet" href="../styleWiki.css"> 
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -29,11 +29,11 @@
 			<div class="sidebar">
 				
 				<div class="logo">
-					<a href="inicio.html"><img src="img/resources/logo.png" alt="logo"> </img></a>
+					<a href="../inicio.html"><img src="img/resources/logo.png" alt="logo"> </img></a>
 				</div>
 				<div class="play_button"> 
 					<!--Aqui debe iniciar el script del entrono virtual-->
-					<a href="index.html" > PLAY </a>
+					<a href="../index.html" > PLAY </a>
 				</div>
 				<div class="demo_info">
 					
@@ -53,21 +53,18 @@
 			
 			</div>
 			<div class="mainsection">
-				<div class="wrapModules">
-					<div class="Modules">
-						<div class="module_lore">
-							<a href="historia.html">LORE</a>
-						</div>
-						<div class="module_items">
-							<a href="items.html">ITEMS</a>
-						</div>
-						<div class="module_characters">
-							<a href="characters.html">CHARACTERS</a>
-						</div>
-						<div class="module_forum">
-							<a href="#">FORO
-							</a>
-						</div>
+				<div class="Modules">
+					<div class="module_lore">
+						<a href="../historia.html">LORE</a></div>
+					<div class="module_items">
+						<a href="../items.html">ITEMS</a>
+					</div>
+					<div class="module_characters">
+						<a href="../characters.html">CHARACTERS</a>
+					</div>
+					<div class="module_forum">
+						<a href="#">FORO</a>
+					</div>
 					<div id="simpleSearch">
 						<!--FALTA SCRIPT BUSQUEDA-->
 						<input type="text" name="searchInput" id="searchInput" placeholder="Search in Devil's Rise Wiki" size="12" />
@@ -78,21 +75,54 @@
 					</div>
 				</div>
 
-				<div class="contentCharacters" >
-					<h1>Personajes</h1>	
-					<div class="intro_char">
-						<p> En esta sección podras consultar información acerca de los personajes, entidades, que aparecen en el videojuego. Nos encontramos en una fase
-							de desarrollo dónde no disponemos de las suficientes herramientas para crear el sistema. Así que aquí encontraras la idea de los diferentes sprites
-							referentes a personajes, "PLAYERS", NPCS, enemigos, etc.
-						</p> </div>
-							
-							<div class="friendly_char"><a href="characters_module/fiendly_chars.html"><h2 id="title_friendly"> Personajes Amistosos </h2> <img src="img/characters/main/darko_v.0.png" class="char_fri_img"> </img></a></div>
-					<div class="hostile_char"><a href="characters_module/hostile_chars.html"><h2 id="title_hostile"> Enemigos</h2><img src="img/enemies/Demon.png" class="char_fri_img"> </img></a></div>
+				<div class="contentCharacters" >	
 					
-					
-					
-				</div>
+					<div>
+						<h1>Enemigos</h1>
+						<p> A enemigos nos referimos a toda entidad con "vida", dentro del videojuego, se comporta de una manera hostil hacía el personaje. <br>
 
+							Estos enemigos se dividirán por familias, creadas bajo diferentes factores. </p>
+					</div>
+
+					<div class="contentsLore" style="float:right" >
+						<div class="index_lore"></div>
+							<ul>
+							<li><span>0 </span> <a href="#prologue">Pròlogo</a></li>
+							<li><span>1</span><a href="#chapter1"> Descubriendo mis poderes</a> </li>
+						 	<li><span>1.1</span> <a href="#ch1_1_Training"> Entrenamiento</a> </li>	
+					
+							
+							
+						</ul>
+					</div>
+				
+					<table class="all_enemies_table">
+						<thead>
+							<th width="100px">Monster</th>
+							<th>Description</th>
+						</thead>
+						<tbody>
+							<tr> 
+							<td id ="sprite_cell"> Haunted Tree <br>
+								 <img src="../img/enemies/hauntedtree.png" id="sprite_img"> </td>
+							<td id ="sprite_cell"> "Aparece ne los bosques encantados, su forma de ataque es muy peculiar,
+								se trata de un arbol que ataca con fuego, y extendiendo sus raizes de fuego. " </td>
+						</tr>
+						<tr>
+							<td id ="sprite_cell"> Blue Worm <br>
+								<img src="../img/enemies/worm_blue.png" id="sprite_img"> </td>
+							<td id ="sprite_cell"> " Gusano que pertenece a la familia <a href="#"> DemonWorms </a>, enemigo básico
+							en el inicio del juego, ataca saltando hacia el jugador y succionando su fuerza  </td>
+						</tr>
+						<tr>
+							<td id ="sprite_cell"> Purple Worm <br>
+								<img src="../img/enemies/worm_purple.png" id="sprite_img"> </td>
+							<td id ="sprite_cell"> " Gusano que pertenece a la familia <a href="#"> DemonWorms </a>, evolución
+							de Blue Worm, su color morado le da propiedades oscuras, y habilidades como lanzar bolas oscuras.  </td>
+						</tr>
+						</tbody>
+											</thead>
+					</table>
 					<!-- Aixo serveix perfer un bloc amb referencies 
 						<div class="lavenderBox">
 						<div class="header">Panel title</div>

@@ -241,6 +241,35 @@ Estilo de los Módulos
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
 }
+#items_navigation{
+	width: 100%; 
+          
+           list-style-type: none; position: relative;
+}
+
+#subsection_weapons{
+	position: absolute;
+	width:25%;
+			  font:normal 0.8em arial;
+			  
+	display:none;      
+}
+#subsection_consumables{
+	display:none;
+	position: absolute;
+	margin-left:65px;
+	width:25%;
+	text-align: center;
+			  font:normal 0.8em arial;
+}
+#subsection_blessings{
+	display:none;
+	margin-left: 23px;
+	width:25%;
+	position: absolute;
+	text-align: center;
+			  font:normal 0.8em arial;
+}
 .all_items_table{
 	width:100%;
 }
@@ -392,6 +421,59 @@ Estilo de los Módulos
 	margin-left:8%;
 	
 }
+#division {
+	border: 2px solid black;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  }
+  
+  .c1, .c2, .c3{
+
+	width: 20%;
+	
+	
+  }
+  
+  @media (min-width: 600px) {
+	.c1 {
+	  width: 60%;
+	  -webkit-order: 2;
+	  order: 2;
+	}
+  
+	.c2 {
+	  width: 40%;
+	  -webkit-order: 1;
+	  order: 1;
+	}
+  
+	.c3 {
+	  width: 100%;
+	  -webkit-order: 3;
+	  order: 3;
+	}
+  }
+  
+  
+  @media (min-width: 800px) {
+	.c2 {
+	  width: 20%;
+	}
+  
+	.c3 {
+	  width: 20%;
+	}
+  }
+  
+  @media (min-width: 800px) {
+	.container {
+	  width: 800px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+  }
 
 
 
@@ -435,6 +517,14 @@ Estilo de los Módulos
 	width: 20%;
 	margin-right: 20px
 }
+#title_friendly{
+	display:block;
+	position: relative;
+}
+#title_hostile{
+	display:block;
+	position:relative;
+}
 .friendly_char{
 	display: inline-block;
 	clear: none;
@@ -466,6 +556,39 @@ Estilo de los Módulos
 	width: 250px;
 	height: auto ;
 }
+table{
+	font-size:100%;
+}
+.all_enemies_table
+{
+	margin-left:20px;
+	align-items: left;
+	width:50%;
+	padding:100%;
+	display:table;
+	box-sizing:border-box;
+	border-spacing:2px;
+
+}
+.all_enemies_table tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#sprite_img{
+	image-rendering: pixelated;
+	margin: 10px
+}
+.all_enemies_table th tr{
+	display:table-cell;
+	vertical-align: inherit;
+	padding: 0.2em 0.4em;
+}
+#sprite_cell{
+	text-align: center;
+
+}
+
 .darko_info{
 	width:100%;
 	height:400px;
@@ -473,19 +596,29 @@ Estilo de los Módulos
 }
 .char_img{
 	width:20%;
-	height:350px;
+	height:auto;
 	border:2px dotted #0645ad;
 	margin: 2px;
 }
 .sensei_info{
 	width:100%;
-	height:400px;
+	height:auto;
 	border:6px double #000;
 }
+.table_info_char{
+	margin-left:20px;
+	align-items: left;
+	width:80%;
+	padding:100%;
+	display:table;
+	box-sizing:border-box;
+	border-spacing:2px;
+}
 #img_char{
-	display:inline-block;
-	object-fit: contain;
-	height: 325px;
+	image-rendering:pixelated;
+	width:100px;
+	height:100px;
+	
 }
 .char_desc{
 	display: inline-block;
