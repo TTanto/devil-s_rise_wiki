@@ -27,12 +27,13 @@ function main(){
 	CustomGame.createBreakableWall("portavermella",16,11,"app/img/prisionDoor.png","step2");
 	CustomGame.createItem("note2",16,13, "app/img/note.png", "note2");
 	CustomGame.createBreakableWall("Lab1",14,15,"app/img/Pared2_Fuente.gif","open");
-	CustomGame.createItem("altar",4,23, "app/img/theKing.png");
+	CustomGame.createItem("altar",4,23, "app/img/RegenOfAngel.png");
+	
 
 	CustomGame.createBreakableWall("Lab2",20,13,"app/img/Pared2_Fuente.gif","key");
-	CustomGame.createUsableItem("Llave1",21,24,"app/img/hostia.png");
+	CustomGame.createUsableItem("Llave1",21,24,"app/img/llave.png");
 	//ITEM LLAVE Y ITEM PRIMERA ARMA
-	CustomGame.createUsableItemShot("primary_Weapon",1,1,"app/img/dagasangre.png","killA");
+	CustomGame.createUsableItemShot("primary_Weapon",1,1,"app/img/gold_crucifixe.png","killA");
 	CustomGame.createUsableItemShot("secundary_Weapon",29,9,"app/img/regular_holy_water.png","killB");
 
 	CustomGame.createBreakableWall("LabBUG",17,15,"app/img/Pared2_Fuente.gif");
