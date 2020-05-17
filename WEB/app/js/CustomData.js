@@ -199,7 +199,67 @@ aux=`
 	  <h3> En tiempos de guerra.... todo agujero es trinchera.</h3><br>
 `;
 		this.set('KEY', aux);
-		
+
+aux=`
+
+	<h1> Parece que has encontrado su utilidad</h1>
+	<p> Estas trabajando duro pero cada vez se complica mas o eso creo</p>
+`;
+		this.set('doorOpenKey',aux);
+
+aux=`
+	<h1>Y Esta sala, seguro que se trata de un puzle donde debes eliminar a los enemigos en un orden correcto</h1>
+	<p>Assegurate de haber explorado todo el laberinto en busca de algun tipo de combinación, tiene pinta que si fallas la palmas manito.</p>
+`;
+		this.set('startBingo',aux);
+
+aux=`
+		<h1>Parece ser que este no es el orden, vuelve a probar!!</h1>
+		<p>Si no consigues tu objetivo, inspecciona el escenario en busca de pistas!</p>
+	`;
+			this.set('wrongCombo',aux);
+	
+
+
+aux=`
+	<h1>Que significara este dibujo? Y estos numeros? La verdad Darko no lo havia visto nunca</h1>
+	<p> yo de tu recordaría esto, puede que mas adelante te sirva de algo</p>
+`;
+		this.set('msgkeyToBingo',aux);
+
+aux=`
+	<h1>Suerte que solo estoy de espectador, que jodido esta parte</h1>
+	<p> Pero bueno seguimos avançando aún que nuestra cordura solo haga que bajar...</p>
+`;
+		this.set('BingoSolved',aux);
+
+//MENSAJES QUEE DICE EL REY NEGRO
+
+aux=`
+	<h1>Darko, esto no huele bien, debe de ser la camára del Rei Negro</h1>
+	<p>Acaba con el antes de que sea demasiado tarde, no lo subestimes, es muy fuere!</p>
+`;
+		this.set('EnterFinal',aux);
+
+aux=`
+	<h1>Así que tu eres la alimaña que me ha causado tantos problemas</h1>
+	<p> Nose quién eres, pero dentro de nada solo serás polvo uajajajajaj</p>
+	`;
+		this.set('ReyNegro1',aux);
+
+aux=`
+	<h1>No eres un simple humano... Eso dice mucho de ti</h1>
+	<p> Pero no me importa quien seais y cuantos, lograre recusitar los demonios!!</p>
+`;
+		this.set('ReyNegro2',aux);
+
+aux=`
+	<h1>No puede estar pasando, tu me estas venciendo?</h1>
+	<p>Debo escapar lo antes possible</p>
+`;
+		this.set('ReyNegro3',aux);
+	
+
 aux=`
 <h1>Enhorabuena, has cogido la tortuga</h1>
 <p><img src='app/img/turtle.png'/></p>

@@ -25,6 +25,8 @@ class CustomGame extends BaseGame{
 	static msgNote1 = false;
 	static msgNote2 = false;
 	static msgLab1 = false;
+	static msgBingo = false;
+	static msgKing = false;
 	static msgMultipleInventory=false;
 	static missionTurtle=false;
 	static turtleOK=false;
@@ -55,14 +57,14 @@ class CustomGame extends BaseGame{
 					par[1]==13
 				)
 				{
-					CustomGame.showMessage('KEY');
+					CustomGame.showMessage('doorOpenKey');
 					CustomGame.remWallXY(20,13);
 					CustomGame.createAnimatedItem("monster7",30,13,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster8",30,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster9",30,17,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster10",30,19,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monster11",20,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monster12",20,17,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster11",19,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster12",19,17,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.remWallXY(17,15);
 				}
 			
@@ -132,7 +134,7 @@ class CustomGame extends BaseGame{
 				}
 
 				/////////////////////////////////////////////////////7
-				//	Aqui comená el bingo			//
+				//	Aqui començá el bingo			//
 				//////////////////////////////////////////////////////
 				
 				if(obj._id== "monster9"){
@@ -144,24 +146,59 @@ class CustomGame extends BaseGame{
 					this.BINGO_2 = true;
 					
 				}
-
-				// if (obj._id == "monster7" && this.BINGO_1 == false){
-				// 	CustomGame.showMessage('KillMonster02');
-				// 	CustomGame.createAnimatedItem("monster7R",29,13,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-				// }
+				if (obj._id == "monster7" && this.BINGO_1 == false){
+					if(par[0] == 30 && par[1] == 13){
+					CustomGame.createAnimatedItem("monster7",29,13,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.showMessage('wrongCombo');
+					}
+					if(par[0] == 29 && par[1] == 13){
+						CustomGame.createAnimatedItem("monster7",30,13,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+						CustomGame.showMessage('wrongCombo');
+					}
+				 }
 				if(obj._id== "monster10" && this.BINGO_2 == true){
 					this.BINGO_3 = true;
+				}
+				if(obj._id== "monster10" && this.BINGO_2 == false){
+					if(par[0] == 30 && par[1] == 19){
+						CustomGame.createAnimatedItem("monster10",29,19,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+						CustomGame.showMessage('wrongCombo');
+						}
+						if(par[0] == 29 && par[1] == 19){
+							CustomGame.createAnimatedItem("monster10",30,19,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+							CustomGame.showMessage('wrongCombo');
+						}
 				}
 
 				if(obj._id== "monster12" && this.BINGO_3 == true){
 					this.BINGO_4 = true;
 				}
+				if(obj._id== "monster12" && this.BINGO_3 == false){
+						if(par[0] == 19 && par[1] == 17){
+						CustomGame.createAnimatedItem("monster12",20,17,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+						CustomGame.showMessage('wrongCombo');
+						}
+						if(par[0] == 20 && par[1] == 17){
+							CustomGame.createAnimatedItem("monster12",19,17,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+							CustomGame.showMessage('wrongCombo');
+						}
+				}
 				if(obj._id== "monster8" && this.BINGO_4 == true){
 					this.BINGO_5 = true;
 				}
+				if(obj._id== "monster8" && this.BINGO_4 == false){
+					if(par[0] == 30 && par[1] == 15){
+						CustomGame.createAnimatedItem("monster8",29,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+						CustomGame.showMessage('wrongCombo');
+						}
+						if(par[0] == 29 && par[1] == 15){
+							CustomGame.createAnimatedItem("monster8",30,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+							CustomGame.showMessage('wrongCombo');
+						}
+				}
 				if(obj._id== "monster11" && this.BINGO_5 == true){
 					this.BINGO_6 = true;
-					CustomGame.showMessage('note2');
+					CustomGame.showMessage('BingoSolved');
 					CustomGame.remWallXY(25,20);
 
 					CustomGame.createAnimatedItem("monsterA",22,21,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
@@ -182,32 +219,41 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monsterE",15,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterF",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 				}
+				if(obj._id== "monster11" && this.BINGO_5 == false){
+					if(par[0] == 19 && par[1] == 15){
+						CustomGame.createAnimatedItem("monster11",20,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+						CustomGame.showMessage('wrongCombo');
+						}
+						if(par[0] == 20 && par[1] == 15){
+							CustomGame.createAnimatedItem("monster11",19,15,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+							CustomGame.showMessage('wrongCombo');
+						}
+				}
 
 				//// ESCENA NEGROS
 				if(obj._id== "REYNEGRO"){
-					CustomGame.showMessage('note2');
+					CustomGame.showMessage('ReyNegro1');
 					CustomGame.createAnimatedItem("REY2",28,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 
 				if(obj._id== "REY2"){
-					CustomGame.showMessage('note2');
 					CustomGame.createAnimatedItem("REY3",19,26,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 
 				if(obj._id== "REY3"){
-					CustomGame.showMessage('note2');
+					CustomGame.showMessage('ReyNegro2');
 					CustomGame.createAnimatedItem("REY4",2,26,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 				if(obj._id== "REY4"){
-					CustomGame.showMessage('note2');
+					
 					CustomGame.createAnimatedItem("REY5",3,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 				if(obj._id== "REY5"){
-					CustomGame.showMessage('note2');
+					CustomGame.showMessage('ReyNegro3');
 					///MAS ENEMIGOS y un objeto los huevos del rei negro
 					
 				}
@@ -290,9 +336,23 @@ class CustomGame extends BaseGame{
 				
 				}
 				if(
+					CustomGame.msgBingo==false
+					&&
+					par[0]==21
+					&&
+					par[1]==13
+				){
+					CustomGame.showMessage('startBingo');
+					CustomGame.msgBingo = true;
+					//QUE CANVII UNA PARET O I QUE HI HAGI UN NUMERO, PER A AJUDARRR COMENTAL AL SERGI
+				}
+				if(
+					CustomGame.msgKing == false &&
 					par[0]==25
 					&&
-					(par[1]==24||par[1]==25||par[1]==26||par[1]==27||par[1]==28||par[1]==29||par[1]==30||par[1]==31)	
+					(par[1]==24||par[1]==25||par[1]==26||par[1]==27||par[1]==28||par[1]==29||par[1]==30||par[1]==31)
+				
+					
 				)
 				{
 					CustomGame.createBreakableWall("trampa",23,23,"app/img/prisionDoor.png","step2");
@@ -304,15 +364,8 @@ class CustomGame extends BaseGame{
 					CustomGame.createBreakableWall("trampa",29,23,"app/img/prisionDoor.png","step2");
 					CustomGame.createBreakableWall("trampa",30,23,"app/img/prisionDoor.png","step2");
 					CustomGame.createBreakableWall("trampa",31,23,"app/img/prisionDoor.png","step2");
-					
-
-					
-					
-				
-
-	
-
-
+					CustomGame.showMessage('EnterFinal')
+					CustomGame.msgKing = true;
 				}
 
 
