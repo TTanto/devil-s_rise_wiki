@@ -313,6 +313,8 @@ Estilo de los Módulos
 
 #items_table_header{
 	background-color: rgb(134, 68, 29);
+	color:#FFF;
+	text-align: center;
 }
 #weapons{
 	font-size: small;
@@ -343,6 +345,7 @@ Estilo de los Módulos
 	border-left: 1px solid #a7d7f9;
 	background-color:#eede65de;
 	line-height: 1.6;
+	font-family:"text";
 	font-size: 0.875em;
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
@@ -573,6 +576,7 @@ Estilo de los Módulos
 #title_hostile{
 	display:block;
 	position:relative;
+	text-align: center;
 }
 .friendly_char{
 	display: inline-block;
@@ -599,7 +603,7 @@ Estilo de los Módulos
     margin-right: 35px;
 	border: 5px solid #f7f6;
 	background-color: #932;
-	font-size: 95%;
+	font-size: 95%;ti
 	position: relative;
 	line-height: 1.7em;
 	width: 250px;
@@ -620,10 +624,16 @@ table{
 	border-spacing:2px;
 
 }
+#header_enemies_table{
+	background-color: rgb(90, 22, 22);
+	color: #FFF;
+}
+
 .all_enemies_table tbody{
     display: table-row-group;
     vertical-align: middle;
-    border-color: inherit;
+	border-color: inherit;
+	background-color: rgb(214, 110, 110);;
 }
 #sprite_img{
 	image-rendering: pixelated;
