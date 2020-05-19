@@ -181,7 +181,7 @@ aux=`
 	  <h3>Porcierto, escapando de ahi, encontre este papelito con unos números,
 	  tiene pinta de una combinación aunque nunca averigue para que servía.</h3> <br> <br>
 	
-	  <h1> 2-5-1-3  /  5-4 </h1>
+	  <h1> 2-5-1-3  /  4-6 </h1>
 `;
 		this.set('note2', aux);
 aux=` 
