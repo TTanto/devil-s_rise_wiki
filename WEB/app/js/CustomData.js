@@ -197,6 +197,7 @@ aux=`
 		
 	  <h1> Para que servira?? <h1> <br>
 	  <h2> Has visto alguna puerta con candado?</h2><br>
+	  <h2> Para utilizarla utiliza la I </h2><br>
 	  <h3> En tiempos de guerra.... todo agujero es trinchera.</h3><br>
 `;
 		this.set('KEY', aux);

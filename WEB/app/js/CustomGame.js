@@ -73,8 +73,8 @@ class CustomGame extends BaseGame{
 				if(
 					obj._id=="primary_Weapon"
 				){
-					CustomGame.createAnimatedItem("monster1",26,1,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monster2",26,2,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster1",26,1,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster2",26,2,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster3",19,4,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.showMessage('elUsodeObjetos');
 					
@@ -82,8 +82,9 @@ class CustomGame extends BaseGame{
 
 				if(obj._id=="secundary_Weapon"){
 					CustomGame.showMessage('HolyWater');
-					CustomGame.createAnimatedItem("monster4.2",14,9,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster4.2",14,9,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monster4",17,8,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster4.4",24,8,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 
 					CustomGame.createAnimatedItem("monsterRand1",10,13,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterRand2",10,15,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
@@ -307,7 +308,7 @@ class CustomGame extends BaseGame{
 				}
 				if(obj._id== "REY4"){
 					CustomGame.showMessage('ReyNegro3');
-					CustomGame.createAnimatedItem("REY5",3,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("REY5",29,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
