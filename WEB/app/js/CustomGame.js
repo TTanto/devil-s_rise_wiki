@@ -73,8 +73,8 @@ class CustomGame extends BaseGame{
 				if(
 					obj._id=="primary_Weapon"
 				){
-					CustomGame.createAnimatedItem("monster1",26,1,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monster2",26,2,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster1",26,1,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster2",26,2,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster3",19,4,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.showMessage('elUsodeObjetos');
 					
@@ -82,8 +82,12 @@ class CustomGame extends BaseGame{
 
 				if(obj._id=="secundary_Weapon"){
 					CustomGame.showMessage('HolyWater');
-
+					CustomGame.createAnimatedItem("monster4.2",14,9,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monster4",17,8,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+
+					CustomGame.createAnimatedItem("monsterRand1",10,13,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterRand2",10,15,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterRand4",6,17,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 				}
 				if(obj._id=="Llave1"){
 					
@@ -201,23 +205,29 @@ class CustomGame extends BaseGame{
 					CustomGame.showMessage('BingoSolved');
 					CustomGame.remWallXY(25,20);
 
-					CustomGame.createAnimatedItem("monsterA",22,21,"app/img/hauntedtree.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterA",22,21,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterB",28,22,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterC",26,24,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("REYNEGRO",2,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 
 
-					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterD",9,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterE",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterF",12,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterD",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterE",15,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterF",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+
 				}
 				if(obj._id== "monster11" && this.BINGO_5 == false){
 					if(par[0] == 19 && par[1] == 15){
@@ -234,27 +244,107 @@ class CustomGame extends BaseGame{
 				if(obj._id== "REYNEGRO"){
 					CustomGame.showMessage('ReyNegro1');
 					CustomGame.createAnimatedItem("REY2",28,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 
 				if(obj._id== "REY2"){
 					CustomGame.createAnimatedItem("REY3",19,26,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 
 				if(obj._id== "REY3"){
 					CustomGame.showMessage('ReyNegro2');
 					CustomGame.createAnimatedItem("REY4",2,26,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 				if(obj._id== "REY4"){
-					
+					CustomGame.showMessage('ReyNegro3');
 					CustomGame.createAnimatedItem("REY5",3,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 				if(obj._id== "REY5"){
-					CustomGame.showMessage('ReyNegro3');
+					CustomGame.showMessage('ReyNegro4');
 					///MAS ENEMIGOS y un objeto los huevos del rei negro
+					CustomGame.createAnimatedItem("monsterD",2,26,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterE",18,27,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterF",11,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterG",29,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterH",7,27,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsteri",9,26,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterj",25,27,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterk",12,28,"app/img/diablillo_verde.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterl",19,26,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterm",15,27,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monstern",8,28,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterñ",7,27,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					
 				}
 
@@ -332,6 +422,18 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monster7",16,22,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.createAnimatedItem("monster9",19,24,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monster10",17,23,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster11",16,20,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster12",11,20,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster13",12,23,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster14",12,23,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monster15",14,22,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monster16",15,19,"app/img/worm_purple.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+
+
+					CustomGame.createAnimatedItem("monster17",16,15,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterNPi",6,17,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterX",13,8,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterRand1",10,13,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.msgLab1 = true;
 				
 				}

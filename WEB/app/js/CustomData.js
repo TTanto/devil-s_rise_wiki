@@ -62,12 +62,12 @@ let aux=`
 aux=`
 <h1>Bienvenida a esta aventura</h1>
 <p>Tu objetivo es parar el renacimiento de los demonios <br>
-	por parte del rei malèfico, el REY NEGRO </p>
+	por parte del rei malefico, el REY NEGRO </p>
 	<img src='app/img/theKing.png'> </img>
 
-<p>Podemos comenzar viendo qué es ese extraño objeto</p>
+<p>Podemos comenzar viendo que es ese extraño objeto</p>
 			<hr/>
-<h2>Pulsa m para abrir/cerrar esta pantalla</h2>
+<h2>Pulsa 'M' para abrir/cerrar esta pantalla</h2>
 			<hr/>
 `;
 		this.set('welcome',aux);
@@ -146,7 +146,7 @@ aux=`
 		`;
 				this.set('elUsodeObjetos',aux);
 aux=`
-		<h2>Bien echo chico, encima de feo le canta la boca. </h2><br>
+		<h3>Bien echo chico, encima de feo le olia mal la boca. </h3><br>
 		<h3>Vamos a seguir. </h3> <br> <br>
 		`;
 				this.set('KillMonster01',aux);
@@ -163,6 +163,7 @@ aux=`
 		this.set('HolyWater',aux);
 
 aux=`
+<br>
 <h1>Equipo recuperado</h1>
 			<p>Ahora que tenemos las armas, vamos a patearle el culo al rey Negro en su castillo</p>
 			<hr/>
@@ -173,7 +174,7 @@ aux=`
 		this.set('KillMonster02',aux);
 
 aux=` 
-		
+	<br>
 	  <h1> Uff, suerte que escape y no me adentre en ese laberinto <h1> <br>
 	  <h2>Paciencia y cabeza</h2><br>
 	  <h3>Mira por donde vas y NO te pierdas tonto</h3> <br> <br>
@@ -183,13 +184,13 @@ aux=`
 		
 	  <h1> Recueda con la voz, puedes usar habilidades <h1> <br>
 	  <h1> Cuando encuentres algun altar, pronuncia ABRIR <h1> <br>
-	  <h2> si es que recuerdo bien....</h2><br>
+	  <h2> Si es que recuerdo bien....</h2><br>
 `;
 		this.set('entrarLab1', aux);
 aux=` 
 		
 	  <h1> Darko has oido eso?? <h1> <br>
-	  <h2> Ves a investigar perro</h2><br>
+	  <h2> Ves a investigar muchacho</h2><br>
 `;
 		this.set('missionLab1', aux);
 aux=` 
@@ -201,19 +202,21 @@ aux=`
 		this.set('KEY', aux);
 
 aux=`
-
+<br>
 	<h1> Parece que has encontrado su utilidad</h1>
 	<p> Estas trabajando duro pero cada vez se complica mas o eso creo</p>
 `;
 		this.set('doorOpenKey',aux);
 
 aux=`
+	<br>
 	<h1>Y Esta sala, seguro que se trata de un puzle donde debes eliminar a los enemigos en un orden correcto</h1>
 	<p>Assegurate de haber explorado todo el laberinto en busca de algun tipo de combinación, tiene pinta que si fallas la palmas manito.</p>
 `;
 		this.set('startBingo',aux);
 
 aux=`
+<br>
 		<h1>Parece ser que este no es el orden, vuelve a probar!!</h1>
 		<p>Si no consigues tu objetivo, inspecciona el escenario en busca de pistas!</p>
 	`;
@@ -222,6 +225,7 @@ aux=`
 
 
 aux=`
+<br>
 	<h1>Que significara este dibujo? Y estos numeros? La verdad Darko no lo havia visto nunca</h1>
 	<p> yo de tu recordaría esto, puede que mas adelante te sirva de algo</p>
 `;
@@ -242,7 +246,7 @@ aux=`
 		this.set('EnterFinal',aux);
 
 aux=`
-	<h1>Así que tu eres la alimaña que me ha causado tantos problemas</h1>
+	<h1>Así que tu eres el raton que me ha causado tantos problemas</h1>
 	<p> Nose quién eres, pero dentro de nada solo serás polvo uajajajajaj</p>
 	`;
 		this.set('ReyNegro1',aux);
@@ -258,7 +262,11 @@ aux=`
 	<p>Debo escapar lo antes possible</p>
 `;
 		this.set('ReyNegro3',aux);
-	
+
+		aux=`
+		<h1>Nooooo imposiblee, volvereee.....</p>
+	`;
+			this.set('ReyNegro4',aux);
 
 aux=`
 <h1>Enhorabuena, has cogido la tortuga</h1>
