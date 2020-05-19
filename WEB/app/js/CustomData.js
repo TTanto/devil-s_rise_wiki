@@ -177,7 +177,11 @@ aux=`
 	<br>
 	  <h1> Uff, suerte que escape y no me adentre en ese laberinto <h1> <br>
 	  <h2>Paciencia y cabeza</h2><br>
-	  <h3>Mira por donde vas y NO te pierdas tonto</h3> <br> <br>
+	  <h3>Mira por donde vas y NO te pierdas</h3> <br> <br>
+	  <h3>Porcierto, escapando de ahi, encontre este papelito con unos números,
+	  tiene pinta de una combinación aunque nunca averigue para que servía.</h3> <br> <br>
+	
+	  <h1> 2-5-1-3  /  5-4 </h1>
 `;
 		this.set('note2', aux);
 aux=` 
