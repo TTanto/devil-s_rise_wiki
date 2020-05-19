@@ -206,9 +206,9 @@ class CustomGame extends BaseGame{
 					CustomGame.showMessage('BingoSolved');
 					CustomGame.remWallXY(25,20);
 
-					CustomGame.createAnimatedItem("monsterA",22,21,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterA",22,21,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterB",28,22,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterC",26,24,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterC",26,24,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("REYNEGRO",2,27,"app/img/theKing.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 
 
@@ -260,7 +260,7 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					
 				}
 
@@ -281,7 +281,7 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					
 				}
 
@@ -303,7 +303,7 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					
 				}
 				if(obj._id== "REY4"){
@@ -324,7 +324,7 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					
 				}
 				if(obj._id== "REY5"){
@@ -345,7 +345,7 @@ class CustomGame extends BaseGame{
 					CustomGame.createAnimatedItem("monstero",6,26,"app/img/worm_blue.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterp",2,28,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterq",28,26,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterr",26,28,"app/img/demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					
 				}
 
@@ -432,7 +432,7 @@ class CustomGame extends BaseGame{
 
 
 					CustomGame.createAnimatedItem("monster17",16,15,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
-					CustomGame.createAnimatedItem("monsterNPi",6,17,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killA",0,0,0,0);
+					CustomGame.createAnimatedItem("monsterNPi",6,17,"app/img/diablillo_azul.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterX",13,8,"app/img/Demon.png",1,1,1,1,1,[0],"killB",0,0,0,0);
 					CustomGame.createAnimatedItem("monsterRand1",10,13,"app/img/draco.png",1,1,1,1,1,[0],"killA",0,0,0,0);
 					CustomGame.msgLab1 = true;
