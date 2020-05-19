@@ -78,7 +78,7 @@ span.user {
 .sidebar {
 	float: left;
 	font-family: "text";
-	background-color: #fff187;
+	background-color: #e4b364;
 	width: 10em;
 	padding: 3px 1.5em 10px 1.3em;
 	position: absolute;
@@ -91,6 +91,7 @@ span.user {
 	padding: 0.25em 0;
 	cursor: default;
 	border: 0;
+	font-style: bold;
 	border-bottom: 1px solid #D8D8D8;
 }
 .sidebar h5 {
@@ -104,7 +105,7 @@ span.user {
 	border-bottom: 1px solid #D8D8D8;
 }
 .sidebar p{
-	font-size: 95%;
+	font-size: 60%;
 	color: #4d4d5a;
 	font-weight: normal;
 	margin: 0.1em 0 0 0;
@@ -112,6 +113,11 @@ span.user {
 	cursor: default;
 	border: 0;
 	border-bottom: 1px solid #D8D8D8;
+}
+#p_demo_intr{
+	color: #000;
+	font-style:italic;
+	font-size: 70%;
 }
 .sidebar li {
 	line-height: 1.125em;
@@ -122,10 +128,10 @@ span.user {
 }
 
 .play_button{
-	float: 0;
-	padding: 25%;
-	border:5px dotted #000;
+	
+
 }
+
 
 .logo {
 }
@@ -156,36 +162,53 @@ Estilo de los Módulos
 .module_lore{
 	margin-left : 70px;
 	display:inline-block;
-	background-color: #FFF;
+	background-color: rgb(204, 186, 186);
 	padding : 10px 20px;
 	width: max-content;
-	border: 4px solid #FFF;
 }
+.module_lore img{
+	
+	align-items: center;
+	height:3em;
+}
+
+
 
 .module_items{
 	margin-left: 30px;
 	display:inline-block;
-	background-color: #FFF;
+	background-color: rgb(204, 186, 186);
 	padding : 10px 20px;
 	width: max-content;
-	border: 4px solid #FFF;
+	
+}
+.module_items img{
+	align-items: center;
+	height:3em;
 }
 .module_characters{
 	margin-left: 30px;
 	display:inline-block;
-	background-color: #FFF;
+	background-color: rgb(204, 186, 186);
 	padding : 10px 20px;
 	width: max-content;
-	border: 4px solid #FFF;
+	
+}
+.module_characters img{
+	align-items: center;
+	height:3em;
 }
 .module_forum{
 	margin-left: 30px;
 	padding : 10px 20px;
-	background-color: #FFF;
+	background-color: rgb(204, 186, 186);
 	margin: 40px;
 	display:inline-block;
 	width: max-content;
-	border: 4px solid #FFF;
+}
+.module_forum img{
+	align-items: center;
+	height:3em;
 }
 
 
@@ -244,13 +267,15 @@ Estilo de los Módulos
 	border-left: 1px solid #a7d7f9;
 	background-color:#eede65de;
 	line-height: 1.6;
+	font-family: text;
+	text-align: justify;
 	font-size: 0.875em;
 	border-top: 1px solid #a7d7f9;
 	border-bottom: 1px solid #a7d7f9;
 }
 #items_navigation{
 	width: 100%; 
-          
+          background: rgb(207, 107, 49);
            list-style-type: none; position: relative;
 }
 
@@ -278,8 +303,23 @@ Estilo de los Módulos
 			  font:normal 0.8em arial;
 }
 .all_items_table{
-	background-color: #FFF;
+	background-color: rgb(241, 170, 128);;
+	color:#000;
 	width:100%;
+	font-family: "text";
+	font-size: 70%;
+	
+}
+
+#items_table_header{
+	background-color: rgb(134, 68, 29);
+}
+#weapons{
+	font-size: small;
+	margin-left: 100%;
+	border-right:0px;
+	background-color: rgb(207, 107, 49);
+
 }
 .all_items_table img{
 	display:block;
@@ -648,6 +688,7 @@ table{
 #Weapons{
 	font-size: small;
 	display:inline-block;
+	background-color: rgb(207, 107, 49);
 	margin-right: 8%;
 	margin-left: 8%;
 	padding : 2% 4%;

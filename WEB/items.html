@@ -29,38 +29,56 @@
 				<div class="logo">
 					<a href="inicio.html"><img src="img/resources/logo.png" alt="logo"> </img></a>
 				</div>
-				<div class="play_button"> 
-					<!--Aqui debe iniciar el script del entrono virtual-->
-					<a href="index.html" > PLAY </a>
-				</div>
+				
+
+				<a href="index.html" class="play_button" ><img src="img/play.gif" ></a>
+				<br>
+			
 				<div class="demo_info">
 					
 					<h3>DEVL'S RISE DEMO</h3>
 				
 					<h5> Te ponemos en contexto </h5>
-					<p> informació sobre en quina situacio del joc es situa la demo,
-						<br>(Castell del rei negre, quan acaba de reneixer als demonios xungus,
-						els poders del heroi,...)</p>
-					<h5>Herramientas usadas</h5>
-					<p> explicar raycasting....</p>
+					<p> La demo esta basada en una escena de videojuego, aún no definida en la història definida en <a href=historia.html>LORE</a> <br>,
+					</p>
+					<p id="p_demo_intr"> Nos encontramos en la mazmorra del rei negro, tras ser capturados minetras fisgoneabamos por ahi. Tu misión no solo es lograr escapar, 
+						sinó detener al rey Negro y sus malvado planes
+					</p>
+						<h5>Herramientas usadas</h5>
+						<p> Motor visual RayCasting <br>
+							Piskel pixel sprite editor
+							Voice Interaction API</p>
+						<h5>Equipo Desarrollador</h5>
+						<p> Somos estudiantes de la Universidad de LLeida, cursando la assignatura de Experiència de Usuario <br>
+						Nuestro objetivo es realizar una página web basandonos en aspectos de la UX, buscando una mejor experiènica para los visitantes de la web.</p>
+					
 					
 				</div>
 
 			
 			</div>
 			<div class="mainsection">
-				<div class="Modules">
-					<div class="module_lore">
-						<a href="historia.html">LORE</a></div>
-					<div class="module_items">
-						<a href="items.html">ITEMS</a>
-					</div>
-					<div class="module_characters">
-						<a href="characters.html">CHARACTERS</a>
-					</div>
-					<div class="module_forum">
-						<a href="#">FORO</a>
-					</div>
+				<div class="wrapModules">
+					<div class="Modules">
+						<div class="module_lore">
+							<img src="img/castillo.png"> 
+							<a href="historia.html">LORE</a>
+						</div>
+						<div class="module_items">
+							<img src="img/libro.png"> 
+							<a href="items.html">ITEMS</a>
+						</div>
+						<div class="module_characters">
+							<img src="img/aaangel.png"> 
+							<a href="characters.html">CHARACTERS</a>
+							<img src="img/demoniooo.png"> 
+							
+						</div>
+						<div class="module_forum">
+							<img src="img/comentario.jpg"> 
+							<a href="#">FORO
+							</a>
+						</div>
 					<div id="simpleSearch">
 						<!--FALTA SCRIPT BUSQUEDA-->
 						<input type="text" name="searchInput" id="searchInput" placeholder="Search in Devil's Rise Wiki" size="12" />
@@ -72,8 +90,11 @@
 				
 				</div>
 				<div class="contentItems">
-					<h1> All Items in one Table</h1>
-					<p>Nos referimos a Item, todo objeto que el JUGADOR puede utilizar durante el gameplay. Existen diferentes tipos de objetos; armas, consumibles, bendiciones.</p>
+					<h1> Objetos</h1>
+					<p>Nos referimos a Item, todo objeto que el JUGADOR puede utilizar durante el gameplay. 
+						Existen diferentes tipos de objetos; armas, consumibles, bendiciones.
+						Esta tabla crecerá según el paso del tiempo con nuevas implementaciones hasta contener toda la información que necesites
+					sobre el ITEM en questión.</p>
 					
 					<script type="text/javascript" id="script_desplegable">
 						function ver(n) {
@@ -130,7 +151,7 @@
 					<br>
 					<br>
 					<table class="all_items_table">
-						<tr>
+						<tr id ="items_table_header">
 							
 							<th>ITEM SPRITE</th>
 							<th>ITEM NAME</th>
@@ -140,51 +161,52 @@
 							<th>MORE INFO</th>
 						</tr>
 						<tr>
-						<td id="weapons">ANGEL'S WEAPONRY</td>
+						<td id="weapons">Armamento</td>
 						</tr>
 					
 						<tr>
 							<td><img src="img/items/wooden_crucifxe.png"></td>
-							<td> Wooden Crucifice</td>
-							<td> Weapon</td>
-							<td></td>
+							<td> Crucifijo de Madera</td>
+							<td> Arma</td>
+							<td> Arma simple, pero con poder angelical</td>
 							<td>Escharlatha Dojo</td>
-							<td></td>
+							<td>Primera arma de Darko</td>
 						</tr>
 						<tr>
 							<td><img src="img/items/stone_crucifixe.png"></td>
-							<td> Stone Crucifice</td>
-							<td> Weapon</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td> Cruicifijo de Piedra</td>
+							<td> Arma</td>
+							<td> Mejora de daño respecto al de madera</td>
+							<td> Cueva Sangrienta</td>
+							<td> Aún que pese mucho, si se concentra la energia tiene el peso de una pluma</td>
 						</tr>
 						<tr>
 							<td><img src="img/items/gold_crucifixe.png"></td>
-							<td> Gold Crucifice</td>
-							<td> Weapon</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>  Cuicifijo de Oro</td>
+							<td> Arma</td>
+							<td> Posee podere según el tipo de elemento de las gemas incrustadas</td>
+							<td> Se consigue evolucionando a forma de ángel</td>
+							<td> Arma que usaron los ángeles para luchar contra demonios</td>
 						</tr>
 						<tr>
-						<td>HOLLY WATERS</td>
+						<td id="weapons">Aguas Benditas</td>
 					</tr>
 					<tr>
 						<td><img src="img/items/regular_holy_water.png" ></td>
-							<td> Regular Holly Water</td>
-							<td> Potion</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td> Agua Bendita Regular</td>
+							<td> Potion/Arma</td>
+							<td>Si se usa defensivamente, aporta más daño. <br>
+								se puede usar como arma contra enemigos específicos.</td>
+							<td> Capillas, casa del señor, situadas en todos los pueblos</td>
+							<td> Dicen que si te tomas una agua bendita sin haverte librado de tus pecados, puede pasarte de lo peor</td>
 					</tr>
 					<tr>
 						<td><img src="img/items/star_holy_water.png" ></td>
-							<td>Star Holly Water</td>
+							<td>Agua Bendita Estrellada</td>
 							<td>Potion</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td> Aporta una ventaja en velocidad de ataque</td>
+							<td> En tiendas secretas, del mercado negro</td>
+							<td> Los contrabandistas la usan como dopaje para ganar las batalass contra la autoridad</td>
 					</tr>
 					</table>
 					 
