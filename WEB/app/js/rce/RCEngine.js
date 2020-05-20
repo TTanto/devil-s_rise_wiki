@@ -36,7 +36,7 @@ class RCEngine{
 		this._tx[1] = new ImageTexture(["app/img/normalWall.png"]);
 		this._tx[2] = new ImageTexture(["app/img/wallWindow.png"]);
 		this._tx[3] = new ImageTexture(["app/img/wallTorch.png"]);
-		this._tx[4] = new ImageTexture(["app/img/wallVines"]);
+		this._tx[4] = new ImageTexture(["app/img/wallVines.png"]);
 		
 
 		this._bestInt = null; // Intersection where the ray hits originally. To get coordinate when drawing texture
