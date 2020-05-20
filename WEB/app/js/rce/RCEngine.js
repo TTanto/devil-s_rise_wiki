@@ -34,14 +34,10 @@ class RCEngine{
 
 		this._by=null;
 		this._tx[1] = new ImageTexture(["app/img/normalWall.png"]);
-		this._tx[2] = new ImageTexture(["app/img/wall2.png"]);
-		this._tx[3] = new ImageTexture(["app/img/wall3.png"]);
-		this._tx[4] = new ImageTexture(["app/img/wall4.png"]);
-		this._tx[5] = new ImageTexture(["app/img/wall5.png"]);
-		this._tx[6] = new ImageTexture(["app/img/wall6.png"]);
-		this._tx[7] = new ImageTexture(["app/img/wall7.png"]);
-		this._tx[8] = new ImageTexture(["app/img/wall8.png"]);
-		this._tx[9] = new ImageTexture(["app/img/wall9.png"]);
+		this._tx[2] = new ImageTexture(["app/img/wallWindow.png"]);
+		this._tx[3] = new ImageTexture(["app/img/wallTorch.png"]);
+		this._tx[4] = new ImageTexture(["app/img/wallVines"]);
+		
 
 		this._bestInt = null; // Intersection where the ray hits originally. To get coordinate when drawing texture
 		this._hitObj = []; // Objects hit on the cast
